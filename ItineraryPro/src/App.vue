@@ -1,85 +1,101 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+//import { RouterLink, RouterView } from 'vue-router'
+//import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div class="about-us">About Us</div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <h1 class="Itinerary_Pro">Itinerary Pro</h1>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+    <div class="plane">✈️</div>
 
-  <RouterView />
+    <h1 class="Get_Started">Get Started</h1>
+
+    <div class="post"><img src="./assets/Postcards.png" height="741"></div>
 </template>
 
+
+
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.about-us {
+position: absolute;
+width: 155px;
+left: -326px;
+top: -80px;
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+font-family: 'Alfa Slab One';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 27px;
+text-align: center;
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
+color: #FFFFFF;
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  .Itinerary_Pro {
+position: absolute;
+width: 601px;
+height: 64px;
+left: 0px;
+top: 220px;
+
+font-family: 'Alfa Slab One';
+font-style: normal;
+font-weight: 400;
+font-size: 81px;
+line-height: 82px;
+text-align: center;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  .plane {
+position: absolute;
+width: 30px;
+height: 30px;
+left: 360px;
+top: 450px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+
+color: #FFFFFF;
   }
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+  .Get_Started {
+    position: absolute;
+width: 300px;
+height: 36px;
+left: 158px;
+top: 450px;
 
-    padding: 1rem 0;
-    margin-top: 1rem;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 39px;
+
+color: #006E8F;
+
+text-shadow: 0px 0px 3.5px #1B9FFF;
   }
-}
+
+  
+    .post {
+      left: 730px;
+    transform: rotate(-90deg);
+  }
+
 </style>
